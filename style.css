@@ -1,0 +1,142 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+    background: linear-gradient(rgb(0, 0, 0),rgb(51, 51, 51));
+    display:inline-block;
+}
+
+.Calculator{
+            display: grid;
+            grid-template-columns: repeat(10, 1fr); 
+            gap: 10px; 
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+            margin-top: 20px;
+}
+
+.display1{
+    background: linear-gradient(rgb(0, 0, 0),rgb(51, 51, 51));
+    margin-top: 40px;
+            align-content: flex-end;
+            align-items: flex-end;
+            width: 400px;
+            height: 70px;
+            margin-left: 100px;
+            margin-right: 100px;
+            padding-bottom: 10px;
+            padding-left: 654px;
+            text-align: right;
+            font-size: 29px ;
+            border-radius: 30px;
+            position: relative; /* To control the position of the input */
+            overflow: hidden; /* Ensures that the input doesn't overflow the div */
+}
+#display{  text-align: right;
+           cursor: pointer;
+            color: transparent;
+            font-size: 60px;
+            color: beige;
+            border:none;
+            background-color: transparent;
+            width: auto;
+            min-width: 0;
+            max-width: 100%;
+            position:relative; /* Position absolute to allow expansion */
+            
+           
+            
+                              
+}
+
+.toggleButton{
+    background-color: #333;
+            color: white;
+            font-size: 24px;
+            border: none;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 50px;
+}
+.toggleButton:hover{
+    color: #333;
+    background-color: white;
+             
+ }
+ .toggleButton:active{
+    background-color: #333;
+            color: white;
+ }
+.button{
+
+    background-color: #333;
+            color: white;
+            font-size: 24px;
+            border: none;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 50px;
+}
+.button:hover{
+    color: #333;
+    background-color: white;
+             
+ }
+ .button:hover:active{
+    background-color: #333;
+            color: white;
+ }
+.button.orange{
+    color: white;
+    background-color: orange;
+    border:none;
+    border-radius: 50px;
+
+}
+.button.button.orange:hover{
+    color:orange;
+    background-color:rgb(31, 28, 28);
+             
+ }
+ .button.orange:hover:active{
+    color: white;
+    background-color: orange;
+ }
+
+.button.grey{
+    color: black;
+    background-color: rgb(241, 241, 241);
+    border:none;
+    border-radius: 50px;
+
+}
+.button.grey:hover{
+    color: rgb(241, 241, 241);
+    background-color:rgb(31, 28, 28);
+             
+ }
+ .button.grey:hover:active{
+    color: black;
+    background-color: rgb(169, 163, 163);
+ }
+
+.button.dgrey{
+    color: white;
+    background-color: rgb(117, 116, 116);
+    border:none;
+    border-radius: 50px;
+
+}
+
+.button.wide{
+            grid-column: span 2; 
+    
+}
+.button:hover{
+   color: #333;
+   background-color: white;
+            
+}
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>S.Calculator</title>
+</head>
+<body>
+    
+    <div class="display1"><input type="text" placeholder="0" id="display" disabled/></div>
+    <div class="body"></div>
+    <div class="Calculator">
+
+        <button class="button" onclick="appendToDisplay('(')"> ( </button>
+        <button class="button" onclick="appendToDisplay(')')"> ) </button>
+        <button class="button" onclick="memoryClear()"> mc </button>
+        <button class="button" onclick="memoryAdd()"> m+ </button>
+        <button class="button" onclick="memorySubtract()"> m- </button>
+        <button class="button" onclick="memoryRecall()"> mr </button> 
+        <button class="button grey"onclick="allClear()">AC</button>
+        <button class="button grey" onclick="appendToDisplay()">+/-</button>
+        <button class="button grey"onclick="appendToDisplay('%')">%</button>
+        <button class="button orange"onclick="appendToDisplay('÷')">÷</button>
+        
+        <button class="button" onclick="toggleSecond()"> 2nd</button>
+        <button class="button"  onclick="calculatorsqaure()"> x<sup>2 </sup> </button>
+        <button class="button" onclick="calculateCube()"> x<sup>3 </sup> </button>
+        <button class="button" onclick="calculatePower()">  x<sup>y </button>
+        <button class="button" onclick="calculateExponential()"> e<sup>x</sup></button>
+        <button class="button" onclick="calculatePowerOfTen()"> 10<sup>x</sup> </button>
+        <button class="button dgrey"onclick="appendToDisplay('7')">7</button>
+        <button class="button dgrey"onclick="appendToDisplay('8')">8</button>
+        <button class="button dgrey"onclick="appendToDisplay('9')">9</button>
+        <button class="button orange" onclick="appendToDisplay('x')">×</button>
+        
+        <button class="button" onclick="calculateReciprocal('1/x')">1/x</button>
+        <button class="button" onclick="calculateSquareRoot('√x')">√x </button>
+        <button class="button" onclick="calculateCubeRoot('∛x')">∛x</button>
+        <button class="button" onclick="calculateSquareRoot('y√x')">y√x </button>    
+        <button class="button" onclick="calculateNaturalLog()">ln</button>
+        <button class="button" onclick="calculateLog10()">log10</button>
+        <button class="button dgrey"onclick="appendToDisplay('4')">4</button>
+        <button class="button dgrey"onclick="appendToDisplay('5')">5</button>
+        <button class="button dgrey"onclick="appendToDisplay('6')">6</button>
+        <button class="button orange"onclick="appendToDisplay('-')">-</button>
+        
+        <button class="button" onclick="calculateFactorial('x!')">x!</button>
+        <button class="button" onclick="calculateSin('sin')">sin</button>
+        <button class="button" onclick="calculateCos('cos')">cos</button>
+        <button class="button" onclick="calculateTan('tan')">tan</button>
+        <button class="button" onclick="calculateExponential()">e</button>
+        <button class="button" onclick="calculateScientificNotation()">EE</button>
+        <button class="button dgrey" onclick="appendToDisplay('1')">1</button>
+        <button class="button dgrey" onclick="appendToDisplay('2')">2</button>
+        <button class="button dgrey" onclick="appendToDisplay('3')">3</button>
+        <button class="button orange" onclick="appendToDisplay('+')">+</button>
+        
+        <button class="button" onclick="appendToDisplay('Rand')"> Rand </button>
+        <button class="button" onclick="appendToDisplay('sinh')"> sinh </button>
+        <button class="button" onclick="appendToDisplay('cosh')"> cosh </button>
+        <button class="button" onclick="appendToDisplay('tanh')"> tanh </button>
+        <button class="button" onclick="insertPi()"> π </button>
+        <button class="toggleButton" id="toggleButton" onclick="singleClickFunction()">Rad</button>
+        <script>
+            const toggleButton = document.getElementById('toggleButton');
+            function singleClickFunction() {
+                console.log("Single Click Detected!");
+               }
+    
+            
+            toggleButton.ondblclick = function() {
+                if (toggleButton.innerText === "Rad") {
+                    toggleButton.innerText = "Deg";
+                } else {
+                    toggleButton.innerText = "Rad"; 
+                }
+            };
+        </script>
+        <button class="button wide dgrey" onclick="appendToDisplay('0')">0</button> 
+        <button class="button dgrey"      onclick="appendToDisplay('.')">.</button>
+        <button class="button orange"     onclick="calculateResult('=')">=</button>
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
